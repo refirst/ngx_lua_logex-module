@@ -30,20 +30,20 @@ log(level, src_file_name, line, fmt)
 参数4：日志内容；
 
 #示例：
-#user  nobody;
-worker_processes 1;
+  #user  nobody;
+  worker_processes 1;
 
-#error_log  logs/error.log;
-#error_log  logs/error.log  notice;
-#error_log  logs/error.log  info;
+  #error_log  logs/error.log;
+  #error_log  logs/error.log  notice;
+  #error_log  logs/error.log  info;
 
-#pid        logs/nginx.pid;
+  #pid        logs/nginx.pid;
 
-events {
-    worker_connections  1024;
-}
+  events {
+      worker_connections  1024;
+  }
 
-http {
+  http {
     include       mime.types;
     default_type  application/octet-stream;
 
