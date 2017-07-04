@@ -30,6 +30,7 @@ log(level, src_file_name, line, fmt)
 参数4：日志内容；
 
 #示例：
+  
     #user  nobody;
     worker_processes 1;
 
