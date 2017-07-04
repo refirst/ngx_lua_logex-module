@@ -38,7 +38,7 @@ http {
 
         location /foo {
 
-            lua_logex_file_path /home/work/xxx/logs/location_ex.log;
+            lua_logex_file_path logs/location_ex.log;
             lua_logex_level 2;
 
             default_type text/css;
