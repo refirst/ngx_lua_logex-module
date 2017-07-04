@@ -1,15 +1,20 @@
 # ngx_lua_logex-module
-业务日志nginx module，相比其它相似的日志模块，其优势主要如下：\r
+业务日志nginx module，相比其它相似的日志模块，其优势主要如下：
 1）非阻塞写日志；
 2）可在nginx conf下配置日志输出路径以及日志级别；
 3）自动生成普通日志和告警日志，并分别按小时级进行切割；
 4）自带变量logex_id，方便进行问题追踪；
 
 #模块指令说明：
+
 lua_logex_file_path
+
 语法：lua_logex_file_path <logfile_path>
+
 默认值：无
+
 配置段：http, server, location
+
 描述：设置输出日志文件路径，若未设置全路径则输出到nginx路径下，若设置全路径则根据全路径输出，假定设置的日志文件名为lua.log，则最终会按照小时级切割成两种日志，如：lua.log.2017070418和lua.log.wf.2017070418，低于NOTICE（包含NOTICE）日志级别的写入前者，高于NOTICE日志级别的写入后者。
 
 lua_logex_level
