@@ -5,7 +5,7 @@
 3）自动生成普通日志和告警日志，并分别按小时级进行切割；
 4）自带变量logex_id，方便进行问题追踪；
 
-#模块指令说明：
+# 模块指令说明：
 lua_logex_file_path
 语法：lua_logex_file_path <logfile_path>
 默认值：无
@@ -22,14 +22,14 @@ lua_logex_level
 $logex_id
 对于每个请求都会自动生成一个logex_id，便于追踪排查问题。
 
-#lua接口函数说明：
+# lua接口函数说明：
 log(level, src_file_name, line, fmt)
 参数1：当前日志的级别，取值范围为0—4；
 参数2：产生该条日志的源码文件名；
 参数3：产生该日志的源码代码行；
 参数4：日志内容；
 
-#示例：  
+# 示例：  
     #user  nobody;
     worker_processes 1;
 
