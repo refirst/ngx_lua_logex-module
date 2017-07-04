@@ -5,7 +5,7 @@
 3）自动生成普通日志和告警日志，并分别按小时级进行切割；
 4）自带变量logex_id，方便进行问题追踪；
 
-#模块指令说明:
+#模块指令说明：
 lua_logex_file_path
 语法：lua_logex_file_path <logfile_path>
 默认值：无
