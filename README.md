@@ -6,15 +6,10 @@
 4）自带变量logex_id，方便进行问题追踪；
 
 #模块指令说明：
-
 lua_logex_file_path
-
 语法：lua_logex_file_path <logfile_path>
-
 默认值：无
-
 配置段：http, server, location
-
 描述：设置输出日志文件路径，若未设置全路径则输出到nginx路径下，若设置全路径则根据全路径输出，假定设置的日志文件名为lua.log，则最终会按照小时级切割成两种日志，如：lua.log.2017070418和lua.log.wf.2017070418，低于NOTICE（包含NOTICE）日志级别的写入前者，高于NOTICE日志级别的写入后者。
 
 lua_logex_level
