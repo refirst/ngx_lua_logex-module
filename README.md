@@ -1,5 +1,5 @@
 # ngx_lua_logex-module
-业务日志nginx module，相比其它相似的日志模块，其优势主要如下：
+业务日志nginx module，相比其它相似的日志模块，其优势主要如下：\r
 1）非阻塞写日志；
 2）可在nginx conf下配置日志输出路径以及日志级别；
 3）自动生成普通日志和告警日志，并分别按小时级进行切割；
@@ -29,8 +29,7 @@ log(level, src_file_name, line, fmt)
 参数3：产生该日志的源码代码行；
 参数4：日志内容；
 
-#示例：
-  
+#示例：  
     #user  nobody;
     worker_processes 1;
 
